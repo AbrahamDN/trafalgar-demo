@@ -134,7 +134,9 @@ button.fill:hover {
 
 .container {
   max-width: 122rem;
+  width: 100%;
   padding: 0 var(--spacing-xxs);
+  margin: auto;
 }
 
 @media only screen and (min-width: 480px) {
@@ -147,3 +149,4 @@ button.fill:hover {
     --font-sm: 1.6rem;
   }
 }
+
