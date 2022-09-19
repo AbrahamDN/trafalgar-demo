@@ -1,0 +1,149 @@
+:root {
+  --color-primary: #458ff6;
+  --color-primary-fade: #5b9bf3;
+  --color-white: #ffffff;
+  --color-gray: #7d7987;
+  --color-black: #000000;
+
+  --family-mulish: "Mulish", sans-serif;
+
+  --font-3xl: 3.6rem;
+  --font-2xl: 2.4rem;
+  --font-xl: 2.1rem;
+  --font-lg: 1.8rem;
+  --font-md: 1.6rem;
+  --font-sm: 1.4rem;
+
+  --gradient-primary: linear-gradient
+    (183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+
+  --shadow-primary: box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+
+  --spacing-4xl: 7.8rem;
+  --spacing-3xl: 4.5rem;
+  --spacing-2xl: 4rem;
+  --spacing-xl: 3.4rem;
+  --spacing-lg: 3.2rem;
+  --spacing-md: 2.8rem;
+  --spacing-sm: 2.5rem;
+  --spacing-xs: 2rem;
+  --spacing-xxs: 1.8rem;
+  
+  /* --screen-mobile: 480px;
+  --screen-tablet: 768px;
+  --screen-laptop: 1024px;
+  --screen-desktop: 1200px;
+  --screen-lgDesktop: 1440px; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--family-mulish);
+  font-size: var(--font-sm);
+  font-weight: 300;
+  min-height: 100vh;
+}
+
+body > #main {
+  flex-grow: 2;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.active {
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+h1,
+.h1 {
+  font-size: var(--font-3xl);
+}
+h2,
+.h2 {
+  font-size: var(--font-2xl);
+}
+h3,
+.h3 {
+  font-size: var(--font-xl);
+}
+h4,
+.h4 {
+  font-size: var(--font-lg);
+}
+
+h5,
+.h5,
+h6,
+.h6,
+a,
+.active {
+  font-size: var(--font-md);
+}
+
+hr {
+  border-top: 2px solid inherit;
+  border: none;
+  max-width: 5.6rem;
+}
+
+button {
+  background: transparent;
+  border-radius: 50rem;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  cursor: pointer;
+  font-family: var(--family-mulish);
+  font-size: var(--font-md);
+  font-weight: 700;
+  padding: 1.2rem var(--spacing-2xl);
+}
+button.fill {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+button.fill:hover {
+  background-color: var(--color-primary-fade);
+}
+
+.container {
+  max-width: 122rem;
+  padding: 0 var(--spacing-xxs);
+}
+
+@media only screen and (min-width: 480px) {
+  :root {
+    --font-3xl: 4.8rem;
+    --font-2xl: 3.6rem;
+    --font-xl: 2.4rem;
+    --font-lg: 2.1rem;
+    --font-md: 1.8rem;
+    --font-sm: 1.6rem;
+  }
+}
