@@ -126,7 +126,7 @@ hr {
   max-width: 5.6rem;
 }
 
-button {
+button, .btn {
   background: transparent;
   border-radius: 50rem;
   border: 2px solid var(--color-primary);
@@ -137,11 +137,11 @@ button {
   font-weight: 700;
   padding: 1rem var(--spacing-2xl) 1.2rem;
 }
-button.fill {
+button.btn--fill, .btn.btn--fill {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-button.fill:hover {
+button.btn--fill:hover, .btn.btn--fill:hover {
   background-color: var(--color-primary-fade);
 }
 
