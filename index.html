@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trafalgar</title>
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
 
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,9 +20,40 @@
   </head>
 
   <body>
-    <header>
-      <nav>Navigation</nav>
-      Header
+    <header class="header">
+      <div class="container">
+        <a class="skip-link" href="#main">Skip to main content</a>
+
+        <nav class="nav">
+          <div class="logo">
+            <a href="/" aria-label="home">
+              <img
+                src="assets/logo/logo.svg"
+                alt="Logo"
+                sizes="(max-width: 991px) 193px, 120px"
+              />
+            </a>
+          </div>
+
+          <ul class="nav__link-wrapper">
+            <li class="nav__link">
+              <a href="#" class="active">Home</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">Find a doctor</a>
+            </li>
+            <li class="nav__link"><a href="#">Apps</a></li>
+            <li class="nav__link">
+              <a href="#">Testimonials</a>
+            </li>
+            <li class="nav__link">
+              <a href="#">About us</a>
+            </li>
+          </ul>
+        </nav>
+
+        Header
+      </div>
     </header>
 
     <main id="main">
