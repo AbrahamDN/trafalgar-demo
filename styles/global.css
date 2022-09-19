@@ -58,6 +58,7 @@ body {
   font-size: var(--font-sm);
   font-weight: 300;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body > #main {
@@ -89,6 +90,8 @@ h6,
 .active {
   color: var(--color-black);
   font-weight: 700;
+  line-height: normal;
+  margin: 0;
 }
 
 h1,
@@ -132,7 +135,7 @@ button {
   font-family: var(--family-mulish);
   font-size: var(--font-md);
   font-weight: 700;
-  padding: 1.2rem var(--spacing-2xl);
+  padding: 1rem var(--spacing-2xl) 1.2rem;
 }
 button.fill {
   background-color: var(--color-primary);

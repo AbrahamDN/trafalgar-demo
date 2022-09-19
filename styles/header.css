@@ -1,9 +1,22 @@
-/* Navigation */
+.header::before {
+  content: url("../assets/svg/grid-element.svg");
+  position: absolute;
+  top: 16rem;
+  left: -2.5%;
+}
+
+/* ---- Navigation ---- */
 .nav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: var(--spacing-xs) 0;
+}
+
+.nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-xs) 0;
 }
 
 .nav > .logo {
@@ -27,5 +40,51 @@
   .nav__link-wrapper {
     display: flex;
     align-items: center;
+  }
+}
+
+/* ---- Hero section ---- */
+
+.hero {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 12rem;
+}
+
+.hero__content {
+  max-width: 45ch;
+  width: 100%;
+  margin-bottom: var(--spacing-2xl);
+}
+.hero__desc {
+  margin: 2.5rem 0 4.5rem;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: calc(69.3rem / 2);
+  max-height: calc(59.3rem / 2);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 0;
+  }
+
+  .hero__content {
+    margin-right: var(--spacing-2xl);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero__img {
+    width: 100%;
+    max-width: 69.3rem;
+    max-height: 59.3rem;
   }
 }
