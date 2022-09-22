@@ -38,6 +38,8 @@
 
 * {
   box-sizing: border-box;
+  outline-offset: 4px;
+  outline-color: #ef7bc3;
 }
 
 html,
@@ -192,6 +194,37 @@ button.btn--fill:hover,
   margin: 0 auto;
 }
 
+/* ---- Navigation ---- */
+.nav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: var(--spacing-xs) 0;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav > .logo {
+  margin-right: var(--spacing-3xl);
+}
+
+.nav__link-wrapper {
+  display: none;
+  margin: 0;
+}
+
+.nav__link {
+  margin-right: var(--spacing-2xl);
+  font-weight: 400;
+}
+.nav__link:last-child {
+  margin-right: 0;
+}
+
 @media only screen and (min-width: 480px) {
   :root {
     --font-3xl: 4.8rem;
@@ -200,5 +233,12 @@ button.btn--fill:hover,
     --font-lg: 2.1rem;
     --font-md: 1.8rem;
     --font-sm: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 836px) {
+  .nav__link-wrapper {
+    display: flex;
+    align-items: center;
   }
 }
