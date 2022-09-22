@@ -9,6 +9,7 @@
 .service-card {
   width: 100%;
   max-width: 35rem;
+  background-color: var(--color-white);
   border-radius: var(--spacing-xs);
   box-shadow: var(--shadow-primary);
   padding: var(--spacing-xs);

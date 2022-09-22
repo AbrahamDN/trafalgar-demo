@@ -253,4 +253,22 @@ button.btn--fill:hover,
     display: flex;
     align-items: center;
   }
+
+  #services {
+    position: relative;
+  }
+  #services::before {
+    content: url("../assets/svg/blob.svg");
+    position: absolute;
+    top: 18%;
+    left: -25%;
+    z-index: -1;
+  }
+  #services::after {
+    content: url("../assets/svg/grid-element.svg");
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    z-index: -1;
+  }
 }
