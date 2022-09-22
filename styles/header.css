@@ -21,6 +21,7 @@
 }
 .hero__desc {
   margin: 2.5rem 0 4.5rem;
+  font-size: var(--font-lg);
 }
 
 .hero__img {
@@ -33,7 +34,6 @@
   .hero {
     justify-content: space-between;
     flex-direction: row;
-    padding-top: 0;
   }
 
   .hero__content {
